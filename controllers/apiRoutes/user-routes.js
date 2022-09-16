@@ -39,15 +39,13 @@ router.post('/', (req, res) => {
         password: req.body.password
     })
         .then(dbUserData => {
-            /* req.session.save(() => {
+            req.session.save(() => {
                 req.session.user_id = dbUserData.id;
                 req.session.username = dbUserData.username;
                 req.session.loggedIn = true;
 
                 res.json(dbUserData);
-            }); */
-
-            res.json(dbUserData);
+            });
         })
         .catch(err => {
             console.log(err);
@@ -55,7 +53,7 @@ router.post('/', (req, res) => {
         });
 });
 
-User.post('/login', (req, res) => {
+router.post('/login', (req, res) => {
     User.findOne({
         where: {
             email: req.body.email
@@ -83,6 +81,17 @@ User.post('/login', (req, res) => {
             });
         });
 });
+
+router.post('/logout', (req, res) => {
+    if(req.session.loggedIn) {
+        req.session.destroy(() => {
+            res.status(204).end();
+        });
+    }
+    else {
+        res.status(404).end();
+    }
+})
 
 router.put('/:id', (req, res) => {
     User.update(req.body, {
