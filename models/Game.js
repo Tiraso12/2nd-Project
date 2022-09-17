@@ -21,7 +21,7 @@ Game.init(
             defaultValue: 0
         },
         plays: {
-            types: DataTypes.INTEGER,
+            type: DataTypes.INTEGER,
             allowNull: false,
             defaultValue: 0
         }
