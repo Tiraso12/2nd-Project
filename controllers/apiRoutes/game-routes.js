@@ -67,4 +67,23 @@ router.put('/:id', (req, res) => {
         });
 });
 
+router.delete('/:id', (req, res) => {
+    Game.destroy({
+        where: {
+            id: req.params.id
+        }
+    })
+        .then(dbGameData => {
+            if(!dbGameData) {
+                res.status(404).json({ message: 'No game found with this id' });
+                return;
+            }
+            res.json(dbGameData);
+        })
+        .catch(err => {
+            console.log(err);
+            res.status(500).json(err);
+        });
+});
+
 module.exports = router;
