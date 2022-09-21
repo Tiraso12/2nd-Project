@@ -63,21 +63,9 @@ p {
 .navbar-side .nav > li > a > i {
   color: #39c6f0;
   background: rgba(255, 255, 255, 0.09);
-  padding: 8px;
+  padding: 15px;
   width: 30px;
   text-align: center;
-}
-.top-navbar .nav > li > a:hover,
-.top-navbar .nav > li > a:focus {
-  text-decoration: none;
-  background-color: #2497ba;
-  color: #fff;
-}
-.nav .open > a,
-.nav .open > a:hover,
-.nav .open > a:focus {
-  background-color: #2497ba;
-  border-color: #428bca;
 }
 .breadcrumb {
   padding: 8px 15px;
