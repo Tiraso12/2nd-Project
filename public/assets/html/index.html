@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The-Game-Room</title>
     <!-- Bootstrap Styles-->
-    <link href="../css/bootstrap.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <!-- FontAwesome Styles-->
     <link href="../css/font-awesome.css" rel="stylesheet" />
     <!-- Custom Styles-->
@@ -25,7 +25,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../html/homepage.html">Game Room</a>
+                <a class="navbar-brand" href="../html/index.html">Game Room</a>
             </div>
 
             <ul class="nav navbar-top-links navbar-right">
@@ -114,9 +114,19 @@
           </div>
       </nav>
         <!-- /. NAV SIDE  -->
-        <div id="page-wrapper">
-            <div id="page-inner">
-    
+        <div id="page-wrapper" >
+            <div id="page-inner" class="row">
+                <div id="betting" class="col-3">
+                    <h1>Choose your bet below.</h1>
+                    <p>Once you choose the game can begin.</p>
+                    <button id="50">50</button>
+                    <button id="100">100</button>
+                    <button id="200">200</button>
+                    <p class="betChoice"></p>
+                    
+                </div>
+                
+                <div class="col-6">
                     <h1>Heads or Tails</h1>
                     <div class="imageContainer"><img src="../images/heads.png" /></div>
                 
@@ -143,6 +153,8 @@
                         }
                       }
                     </style>
+                    </div>
+                    
                 
                 <!-- /. ROW  -->
 				<footer><p>All right reserved. <a href="https://github.com/Tiraso12/The-Game-Room">Roaring lions</a></p></footer>
@@ -153,6 +165,7 @@
     </div>
     <!-- /. WRAPPER  -->
     <!-- JS Scripts-->
+    <script src="../../javascript/betting.js"></script>
     <script src="../../javascript/flipACoin.js"></script>
     <!-- jQuery Js -->
     <script src="../js/jquery-1.10.2.js"></script>
