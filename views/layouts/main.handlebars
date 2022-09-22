@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The-Game-Room</title>
+    {{!-- <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script> --}}
+    <link rel="icon" type="image/x-icon" href="/assets/images/computer-game.svg">
+    <!-- Bootstrap Styles-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- FontAwesome Styles-->
+    <link href="/assets/css/font-awesome.css" rel="stylesheet" />
+    <!-- Custom Styles-->
+    <link href="/assets/css/style.css" rel="stylesheet" />
+    <link href="/assets/css/custom-styles.css" rel="stylesheet" />
+    <!-- Google Fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+</head>
+
+<body>
+    <div id="wrapper">
+        <nav class="navbar expand-lg navbar-dark bg-dark px-md-2">
+            <div class="navbar navbar-dark" style="background-color: #043e50;">
+                <a class="navbar-brand" href="/">The Game Room</a>
+            </div>
+
+
+    <button href="/login">Login</button>
+            {{!-- <ul class="nav justify-content-end">
+                <div class="btn-group col px-md-2">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><img src="/assets/images/email.svg" style="width: 30px; height: 30px;"/></button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                      <li><button class="dropdown-item" type="button">Messages</button></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">All Messages</a></li>
+                    </ul>
+                </div>
+
+                <ul class="nav justify-content-end">
+                    <div class="btn-group col px-md-2">
+                        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><img src="/assets/images/bell-ring.svg" style="width: 30px; height: 30px;"/></button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                          <li><button class="dropdown-item" type="button">Alerts</button></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">All Alerts</a></li>
+                        </ul>
+                </div>
+
+                <ul class="nav justify-content-end">
+                    <div class="btn-group col px-md-2">
+                        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><img src="/assets/images/user.svg" style="width: 30px; height: 30px;"/></button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                          <li><button class="dropdown-item" type="button">Profile</button></li>
+                          <li><button class="dropdown-item" type="button">Settings</button></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                </div>             
+            </ul> --}}
+        </nav>
+        <nav class="navbar-default navbar-side" role="navigation">
+          <div class="sidebar-collapse">
+              <ul class="nav flex-column">
+                <li class ="nav-item">
+                      <a class="nav-link active" href="/login"><img src="/assets/images/coin.svg" style="width: 20px;" height="20px;"/> Login</a>
+                  </li>
+                  <li class ="nav-item">
+                      <a class="nav-link active" href="/headsOrTails"><img src="/assets/images/coin.svg" style="width: 20px;" height="20px;"/> Flip a coin</a>
+                  </li>
+                  <li class ="nav-item">
+                      <a class="nav-link active" href="/rockPaperScissors" ><img src="/assets/images/rock-paper-scissors.svg" style="width: 20px;" height="20px;"/> Rock Paper Scissors</a>
+                  </li>
+                  <li class ="nav-item">
+                      <a class="nav-link active" href="/highOrLow" ><img src="/assets/images/poker.svg" style="width: 20px;" height="20px;"/></i> High or Low</a>
+                  </li>
+              </ul>
+          </div>
+        </nav>
+
+        <!--/. SIDE BAR  -->
+            {{{ body }}}
+          <!-- /. ROW  -->
+            <footer class="row text-center">
+                    <div class="col-md-6 text-center my-auto">
+                        <div class="card card-block d-flex" style="height: 120px;">
+                            <div class="card-body align-items-center d-flex justify-content-center">
+                                <h5 class="card-title"><p class="card-text">All right reserved. <a href="https://github.com/Tiraso12/The-Game-Room">Roaring lions</a></p>
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+            </footer>
+
+        </div>
+        <!-- /. PAGE INNER  -->
+      </div>
+      <!-- /. PAGE WRAPPER  -->
+    </div>
+    <!-- /. WRAPPER  -->
+    <!-- JS Scripts-->
+    <script src="/javascript/login.js"></script>
+    <script src="/javascript/betting.js"></script>
+    <!-- jQuery Js -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- Bootstrap Js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  </body>
+</html>
