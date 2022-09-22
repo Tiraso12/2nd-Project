@@ -13,12 +13,13 @@ function Odds() {
   if (coin < 0.5) {
     setTimeout(function () {
       imageContainer.innerHTML = `<img src="${tailsImage}"/>`;
-      result.innerHTML = "You got Tails";
+      result.innerHTML = "<span style='color:white;'>You Got Tails</span>";
     }, 1000);
   } else {
     setTimeout(function () {
       imageContainer.innerHTML = `<img src="${headsImage}"/>`;
-      result.innerHTML = "You got Heads";
+      result.innerHTML = "<span style='color:white;'>You Got heads</span>";
+      
     }, 1000);
   }
 }

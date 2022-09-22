@@ -17,20 +17,18 @@
 
 <body>
     <div id="wrapper">
-        <nav class="navbar expand-lg navbar-dark bg-dark px-md-2">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="../html/index.html">Game Room</a>
+        <nav class="navbar expand-lg navbar-dark bg-dark px-md-2 special-card-2">
+            <div class="navbar navbar-dark" style="background-color: #043e50;">
+                <a class="navbar-brand container-fluid" href="../html/index.html">Game Room</a>
             </div>
 
             <ul class="nav justify-content-end">
                 <div class="btn-group col px-md-2">
                     <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><img src="../images/email.svg" style="width: 30px; height: 30px;"/></button>
                     <ul class="dropdown-menu dropdown-menu-end">
-                      <li><button class="dropdown-item" type="button">Action</button></li>
-                      <li><button class="dropdown-item" type="button">Another action</button></li>
-                      <li><button class="dropdown-item" type="button">Something else here</button></li>
+                      <li><button class="dropdown-item" type="button">Messages</button></li>
                       <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Separated link</a></li>
+                      <li><a class="dropdown-item" href="#">All Messages</a></li>
                     </ul>
                 </div>
 
@@ -38,11 +36,9 @@
                     <div class="btn-group col px-md-2">
                         <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><img src="../images/bell-ring.svg" style="width: 30px; height: 30px;"/></button>
                         <ul class="dropdown-menu dropdown-menu-end">
-                          <li><button class="dropdown-item" type="button">Action</button></li>
-                          <li><button class="dropdown-item" type="button">Another action</button></li>
-                          <li><button class="dropdown-item" type="button">Something else here</button></li>
+                          <li><button class="dropdown-item" type="button">Alerts</button></li>
                           <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          <li><a class="dropdown-item" href="#">All Alerts</a></li>
                         </ul>
                 </div>
 
@@ -50,11 +46,10 @@
                     <div class="btn-group col px-md-2">
                         <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><img src="../images/user.svg" style="width: 30px; height: 30px;"/></button>
                         <ul class="dropdown-menu dropdown-menu-end">
-                          <li><button class="dropdown-item" type="button">Action</button></li>
-                          <li><button class="dropdown-item" type="button">Another action</button></li>
-                          <li><button class="dropdown-item" type="button">Something else here</button></li>
+                          <li><button class="dropdown-item" type="button">Profile</button></li>
+                          <li><button class="dropdown-item" type="button">Settings</button></li>
                           <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          <li><a class="dropdown-item" href="#">Logout</a></li>
                         </ul>
                 </div>             
             </ul>
@@ -79,48 +74,73 @@
         <!-- /. NAV SIDE  -->
         <div id="page-wrapper" >
             <div id="page-inner" class="row">
-                <div id="betting" class="col-3">
-                    <h1>Choose your bet below.</h1>
-                    <p>Once you choose the game can begin.</p>
-                    <button id="50">50</button>
-                    <button id="100">100</button>
-                    <button id="200">200</button>
-                    <p class="betChoice"></p>
-                    
-                </div>
-                
-                <div class="col-6">
-                    <h1>Heads or Tails</h1>
-                    <div class="imageContainer"><img src="../images/heads.png" /></div>
-                
-                    <button id="start">Click here</button>
-                    <div id="result"></div>
-    
-                    <style>
-                      .imageContainer img {
-                        height: 200px;
-                        width: 200px;
-                      }
-                      .rotate {
-                        animation: rotation 0.1s infinite;
-                        animation-direction: alternate-reverse;
-                
-                        /* transform: rotateX(120deg); */
-                      }
-                      @keyframes rotation {
-                        from {
-                          transform: rotateX(0deg);
-                        }
-                        to {
-                          transform: rotateX(180deg);
-                        }
-                      }
-                    </style>
+
+                <div class="container-fluid ">
+                    <div class="row text-center">
+                        <div class="col-md-4 text-center my auto">
+                            <div class="card card-block d-flex special-card" style="height: 700px;">
+                                <div class="card-body align-items-center d-flex justify-content-center">
+                                    
+                                    <div id="betting" class="container-fluid">
+                                        <h1>Choose your bet below.</h1>
+                                        <p class="h2">Once you choose the game can begin.</p>
+                                        <button id="50">50</button>
+                                        <button id="100">100</button>
+                                        <button id="200">200</button>
+                                        <p class="betChoice"></p>
+                                        
+                                    </div>
+                                    
+                                    <div class="container-fluid">
+                                        <h1>Heads or Tails</h1>
+                                        <div class="imageContainer"><img src="../images/heads.png" /></div>
+                                    
+                                        <button id="start">Click here</button>
+                                        <div id="result"></div>
+                        
+                                        <style>
+                                        .imageContainer img {
+                                            height: 200px;
+                                            width: 200px;
+                                        }
+                                        .rotate {
+                                            animation: rotation 0.1s infinite;
+                                            animation-direction: alternate-reverse;
+                                    
+                                            /* transform: rotateX(120deg); */
+                                        }
+                                        @keyframes rotation {
+                                            from {
+                                            transform: rotateX(0deg);
+                                            }
+                                            to {
+                                            transform: rotateX(180deg);
+                                            }
+                                        }
+                                        </style>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                </div>
+
+                
                     
                 
                 <!-- /. ROW  -->
-				<footer><p>All right reserved. <a href="https://github.com/Tiraso12/The-Game-Room">Roaring lions</a></p></footer>
+				<footer class="row text-center">
+                    <div class="col-md-4 text-center my-auto">
+                        <div class="card card-block d-flex" style="height: 120px;">
+                            <div class="card-body align-items-center d-flex justify-content-center">
+                                <h5 class="card-title"><p class="card-text">All right reserved. <a href="https://github.com/Tiraso12/The-Game-Room">Roaring lions</a></p>
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+
             </div>
             <!-- /. PAGE INNER  -->
         </div>

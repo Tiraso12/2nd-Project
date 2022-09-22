@@ -5,11 +5,12 @@ let bettingSection = document.getElementById("betting");
 let betChoice = document.querySelector(".betChoice");
 
 bet50.onclick = function () {
-  betChoice.innerHTML = `User has selected 50.`;
+  betChoice.innerHTML = `<span style='color:white;'>User has selected 50</span>`;
 };
 bet100.onclick = function () {
-  betChoice.innerHTML = `User has selected 100.`;
+  betChoice.innerHTML = `<span style='color:white;'>User has selected 100</span>`;
 };
 bet200.onclick = function () {
-  betChoice.innerHTML = `User has selected 200.`;
+  betChoice.innerHTML = `<span style='color:white;'>User has selected 200</span>`;
 };
+
