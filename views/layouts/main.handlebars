@@ -12,6 +12,7 @@
     <!-- FontAwesome Styles-->
     <link href="/assets/css/font-awesome.css" rel="stylesheet" />
     <!-- Custom Styles-->
+    <link href="/assets/css/style.css" rel="stylesheet" />
     <link href="/assets/css/custom-styles.css" rel="stylesheet" />
     <!-- Google Fonts-->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
@@ -24,7 +25,9 @@
                 <a class="navbar-brand" href="/">The Game Room</a>
             </div>
 
-            <ul class="nav justify-content-end">
+
+    <button href="/login">Login</button>
+            {{!-- <ul class="nav justify-content-end">
                 <div class="btn-group col px-md-2">
                     <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><img src="/assets/images/email.svg" style="width: 30px; height: 30px;"/></button>
                     <ul class="dropdown-menu dropdown-menu-end">
@@ -54,11 +57,14 @@
                           <li><a class="dropdown-item" href="#">Logout</a></li>
                         </ul>
                 </div>             
-            </ul>
+            </ul> --}}
         </nav>
         <nav class="navbar-default navbar-side" role="navigation">
           <div class="sidebar-collapse">
               <ul class="nav flex-column">
+                <li class ="nav-item">
+                      <a class="nav-link active" href="/login"><img src="/assets/images/coin.svg" style="width: 20px;" height="20px;"/> Login</a>
+                  </li>
                   <li class ="nav-item">
                       <a class="nav-link active" href="/headsOrTails"><img src="/assets/images/coin.svg" style="width: 20px;" height="20px;"/> Flip a coin</a>
                   </li>
@@ -93,6 +99,7 @@
     </div>
     <!-- /. WRAPPER  -->
     <!-- JS Scripts-->
+    <script src="/javascript/login.js"></script>
     <script src="/javascript/betting.js"></script>
     <!-- jQuery Js -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

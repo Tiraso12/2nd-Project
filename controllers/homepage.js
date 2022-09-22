@@ -34,4 +34,11 @@ router.get("/highOrLow", (req, res) => {
   });
 });
 
+router.get("/login", (req, res) => {
+  console.log(req.session);
+
+  res.render("login", {
+    loggedIn: req.session.loggedIn,
+  });
+});
 module.exports = router;
