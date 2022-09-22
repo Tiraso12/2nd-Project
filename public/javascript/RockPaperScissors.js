@@ -13,11 +13,10 @@ let userChoiceImage;
 possibleChoices.forEach((possibleChoice) =>
   possibleChoice.addEventListener("click", (e) => {
     userChoice = e.target.id;
-    console.log(userChoice);
     if (userChoice === "rock") {
       userChoiceImage = rockImage;
     }
-    if (userChoice === "scissor") {
+    if (userChoice === "scissors") {
       userChoiceImage = scissorImage;
     }
     if (userChoice === "paper") {

@@ -4,10 +4,26 @@ const { User } = require("../models");
 
 router.get("/", (req, res) => {
   console.log(req.session);
-
-  res.render("homepage", {
-    loggedIn: req.session.loggedIn,
-  });
+  User.findAll({
+    attributes: { exclude: ["password"] },
+  })
+    .then((dbUserData) => {
+      const totalWins = dbUserData.map((user) => {
+        return {
+          username: user.username,
+          totalWins: user.winsHoT + user.winsRPS + user.winsHoL,
+        };
+      });
+      console.log(totalWins);
+      res.render("homepage", {
+        totalWins,
+        loggedIn: req.session.loggedIn,
+      });
+    })
+    .catch((err) => {
+      console.log(err);
+      res.status(500).json(err);
+    });
 });
 
 router.get("/headsOrTails", (req, res) => {
