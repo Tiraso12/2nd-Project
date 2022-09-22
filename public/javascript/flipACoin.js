@@ -36,7 +36,7 @@ async function tailsOdds() {
   if (coin < 0.5) {
     setTimeout(function () {
       imageContainer.innerHTML = `<img src="${tailsImage}"/>`;
-      result.innerHTML = "You chose correctly, it is tails";
+      result.innerHTML = "<span style='color:black;'>You chose correctly, it is heads</span>";
     }, 1000);
     const res = await fetch(`/api/users/win-HoT/${user_id}`, {
       method: "PUT",
@@ -45,7 +45,7 @@ async function tailsOdds() {
   } else {
     setTimeout(function () {
       imageContainer.innerHTML = `<img src="${headsImage}"/>`;
-      result.innerHTML = "You chose incorrectly, it is heads";
+      result.innerHTML = "<span style='color:black;'>You chose incorrectly, it is tails</span>";
     }, 1000);
   }
 }
