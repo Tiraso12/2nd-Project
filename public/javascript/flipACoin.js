@@ -1,7 +1,7 @@
 //image shrinks horizontally heads then tails does the opposing to give it the appearance of flipping
 let imageContainer = document.querySelector(".imageContainer");
-let headsImage = `../images/heads.png`;
-let tailsImage = `../images/tails.png`;
+let headsImage = `/assets/images/heads.png`;
+let tailsImage = `/assets/images/tails.png`;
 
 let start = document.getElementById("start");
 let result = document.getElementById("result");
@@ -13,12 +13,13 @@ function Odds() {
   if (coin < 0.5) {
     setTimeout(function () {
       imageContainer.innerHTML = `<img src="${tailsImage}"/>`;
-      result.innerHTML = "You got Tails";
+      result.innerHTML = "<span style='color:black;'>You Got Tails</span>";
     }, 1000);
   } else {
     setTimeout(function () {
       imageContainer.innerHTML = `<img src="${headsImage}"/>`;
-      result.innerHTML = "You got Heads";
+      result.innerHTML = "<span style='color:black;'>You Got heads</span>";
+      
     }, 1000);
   }
 }

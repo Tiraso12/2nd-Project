@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -20,7 +20,7 @@
     <div id="wrapper">
         <nav class="navbar expand-lg navbar-dark bg-dark px-md-2">
             <div class="navbar navbar-dark" style="background-color: #043e50;">
-                <a class="navbar-brand" href="../html/index.html">Game Room</a>
+                <a class="navbar-brand container-fluid" href="../html/index.html">Game Room</a>
             </div>
 
             <ul class="nav justify-content-end">
@@ -57,61 +57,79 @@
         </nav>
 
         <!--/. SIDE BAR  -->
-      <nav class="navbar-default navbar-side" role="navigation">
-        <div class="sidebar-collapse">
-            <ul class="nav flex-column">
-                <li class ="nav-item">
-                    <a class="nav-link active" href="index.html"><img src="../images/coin.svg" style="width: 20px;" height="20px;"/> Flip a coin</a>
-                </li>
-                <li class ="nav-item">
-                    <a class="nav-link active" href="Game_2.html" img src="../images/rock-paper-scissors.svg"><img src="../images/rock-paper-scissors.svg" style="width: 20px;" height="20px;"/> Rock Paper Scissors</a>
-                </li>
-                <li class ="nav-item">
-                    <a class="nav-link active" href="Game_3.html" img src="../images/poker.svg"><img src="../images/poker.svg" style="width: 20px;" height="20px;"/></i> High or Low</a>
-                </li>
-            </ul>
-        </div>
-      </nav>
-      
-      <!-- /. NAV SIDE  -->
-      <div id="page-wrapper">
+        <nav class="navbar-default navbar-side" role="navigation">
+          <div class="sidebar-collapse">
+              <ul class="nav flex-column">
+                  <li class ="nav-item">
+                      <a class="nav-link active" href="index.html"><img src="../images/coin.svg" style="width: 20px;" height="20px;"/> Flip a coin</a>
+                  </li>
+                  <li class ="nav-item">
+                      <a class="nav-link active" href="Game_2.html" img src="../images/rock-paper-scissors.svg"><img src="../images/rock-paper-scissors.svg" style="width: 20px;" height="20px;"/> Rock Paper Scissors</a>
+                  </li>
+                  <li class ="nav-item">
+                      <a class="nav-link active" href="Game_3.html" img src="../images/poker.svg"><img src="../images/poker.svg" style="width: 20px;" height="20px;"/></i> High or Low</a>
+                  </li>
+              </ul>
+          </div>
+        </nav>
+
+        <!-- /. NAV SIDE  -->
+        <div id="page-wrapper" >
             <div id="page-inner" class="row">
-                
+
                 <div class="container-fluid ">
                     <div class="row text-center">
                         <div class="col-md-5 text-center my auto">
-                            <div class="card card-block d-flex special-card-2" style="height: 700px;">
+                            <div class="card card-block d-flex special-card" style="height: 350px;">
                                 <div class="card-body align-items-center d-flex justify-content-center">
-
+                                    
                                     <div id="betting" class="container-fluid">
-                                        <h1>Choose your bet below.</h1>
+                                        <h1 style="color:black ;">Choose your bet below.</h1>
                                         <p class="h2">Once you choose the game can begin.</p>
                                         <button id="50">50</button>
                                         <button id="100">100</button>
                                         <button id="200">200</button>
                                         <p class="betChoice"></p>
                                     </div>
-
+                                    
                                     <div class="container-fluid">
-                                        <h1 class="h1">Rock Paper Scissors</h1>
-                                        <h2 style="color:white;">Your Choice: <span id="user-choice"></span></h2>
-                                        <h2 style="color:white;">Computer Choice: <span id="computer-choice"></span></h2>
-                                        <h2 style="color:white;">Winner: <span id="result"></span></h2>
-
-                                        <button id="rock">Rock</button>
-                                        <button id="paper">Paper</button>
-                                        <button id="scissors">Scissors</button>
+                                        <h1 style="color:black">Heads or Tails</h1>
+                                        <div class="imageContainer"><img src="../images/heads.png" /></div>
+                                    
+                                        <button id="start">Click here</button>
+                                        <div id="result"></div>
+                        
+                                        <style>
+                                        .imageContainer img {
+                                            height: 200px;
+                                            width: 200px;
+                                        }
+                                        .rotate {
+                                            animation: rotation 0.1s infinite;
+                                            animation-direction: alternate-reverse;
+                                    
+                                            /* transform: rotateX(120deg); */
+                                        }
+                                        @keyframes rotation {
+                                            from {
+                                            transform: rotateX(0deg);
+                                            }
+                                            to {
+                                            transform: rotateX(180deg);
+                                            }
+                                        }
+                                        </style>
                                     </div>
-
+                                    
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                
+  
                 <!-- /. ROW  -->
-                <footer class="row text-center">
-                    <div class="col-md-5 text-center my-auto">
+				<footer class="row text-center">
+                    <div class="col-md-4 text-center my-auto">
                         <div class="card card-block d-flex" style="height: 120px;">
                             <div class="card-body align-items-center d-flex justify-content-center">
                                 <h5 class="card-title"><p class="card-text">All right reserved. <a href="https://github.com/Tiraso12/The-Game-Room">Roaring lions</a></p>
@@ -124,17 +142,17 @@
             </div>
             <!-- /. PAGE INNER  -->
         </div>
-      <!-- /. PAGE WRAPPER  -->
+        <!-- /. PAGE WRAPPER  -->
     </div>
-  <!-- /. WRAPPER  -->
-  <!-- JS Scripts-->
-  <script src="../../javascript/betting.js"></script>
-  <script src="../../javascript/RockPaperScissors.js"></script>
+    <!-- /. WRAPPER  -->
+    <!-- JS Scripts-->
+    <script src="../../javascript/betting.js"></script>
+    <script src="../../javascript/flipACoin.js"></script>
     <!-- jQuery Js -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <!-- Bootstrap Js -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 
 </html>

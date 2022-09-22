@@ -17,15 +17,13 @@ possibleChoices.forEach((possibleChoice) =>
     if (userChoice === "rock") {
       userChoiceImage = rockImage;
     }
-    if (userChoice === "scissor") {
+    if (userChoice === "scissors") {
       userChoiceImage = scissorImage;
     }
     if (userChoice === "paper") {
       userChoiceImage = paperImage;
     }
-    userChoiceDisplay.innerHTML = `
-    <img src="${userChoiceImage}"/> 
-    `;
+    userChoiceDisplay.innerHTML = `<img src="${userChoiceImage}" width='80px' height='80px'/>`;
     generateComputerChoice();
     getResult();
   })
@@ -43,7 +41,7 @@ function generateComputerChoice() {
   if (randomNumber === 3) {
     computerChoice = paperImage;
   }
-  computerChoiceDisplay.innerHTML = `<img src="${computerChoice}"/> `;
+  computerChoiceDisplay.innerHTML = `<img src="${computerChoice}" width='80px' height='80px'/> `;
 }
 
 function getResult() {
