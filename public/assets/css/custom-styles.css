@@ -44,9 +44,22 @@ body {
      against bootstraps styles
      which tends to work better than using !important 
      (future you will thank you later)*/
-  
-    background-color: rgb(146, 0, 122);
+    background-image: url(../images/rock-paper-scissors.jpg);
+    background-position: center;
+    background-size: contain;
     opacity: 1;
+    border-radius: 5%;
+}
+
+.special-card-3 {
+    /* create a custom class so you 
+     do not run into specificity issues 
+     against bootstraps styles
+     which tends to work better than using !important 
+     (future you will thank you later)*/
+     background-image: url(../images/high\ or\ low.jpg);
+     background-position: center;
+     background-size: contain;
 }
 .text-center {
   text-align: center;
@@ -66,6 +79,7 @@ h3,
 .h2 {
   color: white;
   font-size: medium;
+  border-color: #000;
 }
 h4 {
   padding-top: 10px;
