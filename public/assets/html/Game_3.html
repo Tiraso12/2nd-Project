@@ -1,178 +1,133 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The-Game-Room</title>
+    <link rel="icon" type="image/x-icon" href="../images/computer-game.svg">
     <!-- Bootstrap Styles-->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <!-- FontAwesome Styles-->
     <link href="../css/font-awesome.css" rel="stylesheet" />
     <!-- Custom Styles-->
     <link href="../css/custom-styles.css" rel="stylesheet" />
     <!-- Google Fonts-->
-    <link
-      href="http://fonts.googleapis.com/css?family=Open+Sans"
-      rel="stylesheet"
-      type="text/css"
-    />
-  </head>
-  <body>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+</head>
+
+<body>
     <div id="wrapper">
-      <nav class="navbar navbar-default top-navbar" role="navigation">
-        <div class="navbar-header">
-          <button
-            type="button"
-            class="navbar-toggle"
-            data-toggle="collapse"
-            data-target=".sidebar-collapse"
-          >
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="../html/homepage.html">Game Room</a>
-        </div>
+        <nav class="navbar expand-lg navbar-dark bg-dark px-md-2">
+            <div class="navbar navbar-dark" style="background-color: #043e50;">
+                <a class="navbar-brand" href="../html/index.html">Game Room</a>
+            </div>
 
-        <ul class="nav navbar-top-links navbar-right">
-          <!-- /.dropdown -->
-          <li class="dropdown">
-            <a
-              class="dropdown-toggle"
-              data-toggle="dropdown"
-              href="#"
-              aria-expanded="false"
-            >
-              <i class="fa fa-envelope fa-fw"></i>
-              <i class="fa fa-caret-down"></i>
-            </a>
-            <ul class="dropdown-menu dropdown-messages">
-              <li>
-                <a href="#"> </a>
-              </li>
-              <li class="divider"></li>
-              <li>
-                <a href="#"> </a>
-              </li>
-              <li class="divider"></li>
-              <li>
-                <a href="#"> </a>
-              </li>
-              <li class="divider"></li>
-              <li>
-                <a class="text-center" href="#">
-                  <strong>Read All Messages</strong>
-                  <i class="fa fa-angle-right"></i>
-                </a>
-              </li>
-            </ul>
-            <!-- /.dropdown-messages -->
-          </li>
+            <ul class="nav justify-content-end">
+                <div class="btn-group col px-md-2">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><img src="../images/email.svg" style="width: 30px; height: 30px;"/></button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                      <li><button class="dropdown-item" type="button">Messages</button></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">All Messages</a></li>
+                    </ul>
+                </div>
 
-          <!-- /.dropdown -->
-          <li class="dropdown">
-            <a
-              class="dropdown-toggle"
-              data-toggle="dropdown"
-              href="#"
-              aria-expanded="false"
-            >
-              <i class="fa fa-bell fa-fw"></i> <i class="fa fa-caret-down"></i>
-            </a>
-            <ul class="dropdown-menu dropdown-alerts">
-              <li>
-                <a class="text-center" href="#">
-                  <strong>See All Alerts</strong>
-                  <i class="fa fa-angle-right"></i>
-                </a>
-              </li>
+                <ul class="nav justify-content-end">
+                    <div class="btn-group col px-md-2">
+                        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><img src="../images/bell-ring.svg" style="width: 30px; height: 30px;"/></button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                          <li><button class="dropdown-item" type="button">Alerts</button></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">All Alerts</a></li>
+                        </ul>
+                </div>
+
+                <ul class="nav justify-content-end">
+                    <div class="btn-group col px-md-2">
+                        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><img src="../images/user.svg" style="width: 30px; height: 30px;"/></button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                          <li><button class="dropdown-item" type="button">Profile</button></li>
+                          <li><button class="dropdown-item" type="button">Settings</button></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                </div>             
             </ul>
-            <!-- /.dropdown-alerts -->
-          </li>
-          <!-- /.dropdown -->
-          <li class="dropdown">
-            <a
-              class="dropdown-toggle"
-              data-toggle="dropdown"
-              href="#"
-              aria-expanded="false"
-            >
-              <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
-            </a>
-            <ul class="dropdown-menu dropdown-user">
-              <li>
-                <a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
-              </li>
-              <li class="divider"></li>
-              <li>
-                <a href="#"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
-              </li>
-            </ul>
-            <!-- /.dropdown-user -->
-          </li>
-          <!-- /.dropdown -->
-        </ul>
-      </nav>
-      <!--/. NAV TOP  -->
-      <nav class="navbar-default navbar-side" role="navigation">
-        <div class="sidebar-collapse">
-          <ul class="nav" id="main-menu">
-            <li>
-              <a class="active-menu" href="homepage.html"
-                ><i class=""></i> Flip a coin</a
-              >
-            </li>
-            <li>
-              <a href="Game_2.html"><i class=""></i> Rock Paper Scissors</a>
-            </li>
-            <li>
-              <a href="Game_3.html"><i class=""></i> High or Low</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <!-- /. NAV SIDE  -->
+        </nav>
+        <nav class="navbar-default navbar-side" role="navigation">
+          <div class="sidebar-collapse">
+              <ul class="nav flex-column">
+                  <li class ="nav-item">
+                      <a class="nav-link active" href="index.html"><img src="../images/coin.svg" style="width: 20px;" height="20px;"/> Flip a coin</a>
+                  </li>
+                  <li class ="nav-item">
+                      <a class="nav-link active" href="Game_2.html" img src="../images/rock-paper-scissors.svg"><img src="../images/rock-paper-scissors.svg" style="width: 20px;" height="20px;"/> Rock Paper Scissors</a>
+                  </li>
+                  <li class ="nav-item">
+                      <a class="nav-link active" href="Game_3.html" img src="../images/poker.svg"><img src="../images/poker.svg" style="width: 20px;" height="20px;"/></i> High or Low</a>
+                  </li>
+              </ul>
+          </div>
+        </nav>
+
+        <!--/. SIDE BAR  -->
       <div id="page-wrapper">
         <div id="page-inner" class="row">
-          <div id="betting" class="col-3">
-            <h1>Choose your bet below.</h1>
-            <p>Once you choose the game can begin.</p>
-            <button id="50">50</button>
-            <button id="100">100</button>
-            <button id="200">200</button>
-            <p class="betChoice"></p>
-          </div>
-          <div class="col-6">
-            <h1>High or Low</h1>
-            <h2>Pick wether the next number will be high or low.</h2>
-            <h3>How much will you bet?</h3>
 
-            <div id="randomNumber"></div>
-            <div>
-              <button id="high">High</button>
-              <button id="low">Low</button>
-              <p id="result"></p>
-            </div>
-          </div>
+            <div class="container-fluid ">
+                <div class="row text-center">
+                    <div class="col-md-6 text-center my auto">
+                        <div class="card card-block d-flex special-card-3" style="height: 600px;">
+                            <div class="card-body align-items-center d-flex justify-content-center">
+
+                                <div class="row text-center container-fluid align-items-center justify-content-center">
+                                    <div class="col-md-8 text-center my auto">
+                                        <div class="card card-block d-flex" style="height: 200px;">
+                                            <h1 style="color: black ;">Choose your bet below.</h1>
+                                            <p>Once you choose the game can begin.</p>
+                                            <button id="50">50</button>
+                                            <button id="100">100</button>
+                                            <button id="200">200</button>
+                                            <p class="betChoice"></p>
+                                        </div> 
+                                    </div>
+                                </div>  
+
+                                <div class="row text-center container-fluid align-items-center justify-content-center">
+                                    <div class="col-md-8 text-center my auto">
+                                        <div class="card card-block d-flex" style="height: 300px;">
+                                            <h1 style="color:black;">Pick wether the next number will be high or low.</h1>
+                                            <h3>How much will you bet?</h3>
+
+                                            <div id="randomNumber"></div>
+                                            <div>
+                                            <button id="high">High</button>
+                                            <button id="low">Low</button>
+                                            <p id="result"></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>           
+
           <!-- /. ROW  -->
-          <footer>
-            <p>
-              All right reserved.
-              <a href="https://github.com/Tiraso12/The-Game-Room"
-                >Roaring lions</a
-              >
-            </p>
-          </footer>
+            <footer class="row text-center">
+                    <div class="col-md-6 text-center my-auto">
+                        <div class="card card-block d-flex" style="height: 120px;">
+                            <div class="card-body align-items-center d-flex justify-content-center">
+                                <h5 class="card-title"><p class="card-text">All right reserved. <a href="https://github.com/Tiraso12/The-Game-Room">Roaring lions</a></p>
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+            </footer>
+
         </div>
         <!-- /. PAGE INNER  -->
       </div>
@@ -183,8 +138,9 @@
     <script src="../../javascript/betting.js"></script>
     <script src="../../javascript/highOrLow.js"></script>
     <!-- jQuery Js -->
-    <script src="../js/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <!-- Bootstrap Js -->
-    <script src="../js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
   </body>
 </html>
