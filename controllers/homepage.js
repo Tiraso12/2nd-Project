@@ -44,9 +44,10 @@ router.get("/rockPaperScissors", (req, res) => {
 
 router.get("/highOrLow", (req, res) => {
   console.log(req.session);
-
+  console.log(req.session.loggedIn);
   res.render("highOrLow", {
     loggedIn: req.session.loggedIn,
+    user_id: req.session.user_id,
   });
 });
 
