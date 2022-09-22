@@ -1,0 +1,26 @@
+<div id="page-wrapper">
+            <div id="page-inner" class="row">
+                
+                <div class="container-fluid ">
+                    <div class="row text-center">
+                        <div class="col-md-5 text-center my auto">
+                            <div class="card card-block d-flex special-card-2" style="height: 700px;">
+                                <div class="card-body align-items-center d-flex justify-content-center">
+
+                                    <div id="homepage" class="container-fluid">
+                                        <h1>Welcome to the Game Room</h1>
+                                        <p class="h2">We hope you enjoy our selection of games to play from the list on the left.</p>
+                                        <h2 class="Highscores">Highscores:</h2>
+                                        <ol>Top players</ol>
+                                        {{#each totalWins}}
+                                        <ol>
+                                            <p>{{this.username}}</p>
+                                            <p>{{this.totalWins}}</p>
+                                        </ol>
+                                        {{/each}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>

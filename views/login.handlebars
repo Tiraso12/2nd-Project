@@ -1,0 +1,75 @@
+<div id="page-wrapper">
+            <div id="page-inner" class="row">
+                
+                <div class="container-fluid ">
+                    <div class="row text-center">
+                        <div class="col-md-5 text-center my auto">
+                            <div class="card card-block d-flex special-card-2" style="height: 700px;">
+                                <div class="card-body align-items-center d-flex justify-content-center">
+
+                                    <div class="login" id="login">
+      <h1>Login</h1>
+      <form action="/auth" method="post">
+        <label for="username">
+          <!-- font awesome icon -->
+          <i class="fas fa-user"></i>
+        </label>
+        <input
+          type="text"
+          name="username"
+          placeholder="Email"
+          id="log-username"
+          required
+        />
+        <label for="password">
+          <i class="fas fa-lock"></i>
+        </label>
+        <input
+          type="password"
+          name="password"
+          placeholder="Password"
+          id="log-password"
+          required
+        />
+        <input type="submit" value="Login" />
+      </form>
+    </div>
+
+    <div class="login" id="signup">
+      <h1>Sign up</h1>
+      <form action="/auth" method="post">
+        <label for="username">
+          <!-- font awesome icon -->
+          <i class="fas fa-user"></i>
+        </label>
+        <input
+          type="text"
+          name="username"
+          placeholder="Username"
+          id="sign-username"
+        />
+
+        <label for="username">
+          <!-- font awesome icon -->
+          <i class="fas fa-at"></i>
+        </label>
+        <input type="text" name="email" placeholder="Email" id="sign-email" />
+
+        <label for="password">
+          <i class="fas fa-lock"></i>
+        </label>
+        <input
+          type="password"
+          name="password"
+          placeholder="Password"
+          id="sign-password"
+        />
+        <input type="submit" value="Sign Up" />
+      </form>
+    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<script src="/javascript/login.js"></script>
