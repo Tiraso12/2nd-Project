@@ -5,7 +5,7 @@ const { User } = require("../models");
 router.get("/", (req, res) => {
   console.log(req.session);
 
-  res.render("homepage", {
+  res.render("headsOrTails", {
     loggedIn: req.session.loggedIn,
   });
 });
