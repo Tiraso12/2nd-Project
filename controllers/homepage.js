@@ -31,6 +31,7 @@ router.get("/headsOrTails", (req, res) => {
 
   res.render("headsOrTails", {
     loggedIn: req.session.loggedIn,
+    user_id: req.session.user_id,
   });
 });
 
@@ -39,6 +40,7 @@ router.get("/rockPaperScissors", (req, res) => {
 
   res.render("rockPaperScissors", {
     loggedIn: req.session.loggedIn,
+    user_id: req.session.user_id,
   });
 });
 
