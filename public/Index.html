@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,minimum-scale=1">
+		<title>Login</title>
+        <!-- the form awesome library is used to add icons to our form -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+        <!-- include the stylesheet file -->
+        <link href="./assets/css/style.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+	</head>
+	<body>
+		<div class="login" id="login">
+			<h1>Login</h1>
+			<form action="/auth" method="post">
+				<label for="username">
+					<!-- font awesome icon -->
+					<i class="fas fa-user"></i>
+				</label>
+				<input type="text" name="username" placeholder="Email" id="log-username" required>
+				<label for="password">
+					<i class="fas fa-lock"></i>
+				</label>
+				<input type="password" name="password" placeholder="Password" id="log-password" required>
+				<input type="submit" value="Login">
+			</form>
+		</div>
+
+		<div class="login" id="signup">
+			<h1>Sign up</h1>
+			<form action="/auth" method="post">
+				<label for="username">
+					<!-- font awesome icon -->
+					<i class="fas fa-user"></i>
+				</label>
+				<input type="text" name="username" placeholder="Username" id="sign-username" >
+				
+				<label for="username">
+					<!-- font awesome icon -->
+					<i class="fas fa-at"></i>
+				</label>
+				<input type="text" name="email" placeholder="Email" id="sign-email" >
+				
+				
+				<label for="password">
+					<i class="fas fa-lock"></i>
+				</label>
+				<input type="password" name="password" placeholder="Password" id="sign-password" >
+				<input type="submit" value="Sign Up">
+			</form>
+		</div>
+	</body>
+	<script src="./javascript/login.js"></script>
+</html>
