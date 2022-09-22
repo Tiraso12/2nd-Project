@@ -33,9 +33,10 @@ body {
   
     background-color: rgb(146, 0, 122);
     opacity: 1;
-    background-image: url(../images/woodbackground.jpg);
-    border-radius: 100%;
+    background-image: url(../images/Heads-or-Tails-Splash.jpg);
     border-color: black;
+    background-size: contain;
+    background-position: center;
 }
 
 .special-card-2 {
@@ -77,10 +78,10 @@ h3,
   margin-bottom: -5px;
 }
 .h2 {
-  color: white;
+  color: black;
   font-size: medium;
-  border-color: #000;
-}
+  
+  }
 h4 {
   padding-top: 10px;
 }
