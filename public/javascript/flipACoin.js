@@ -1,7 +1,7 @@
 //image shrinks horizontally heads then tails does the opposing to give it the appearance of flipping
 let imageContainer = document.querySelector(".imageContainer");
-let headsImage = `../images/heads.png`;
-let tailsImage = `../images/tails.png`;
+let headsImage = `../assets/images/heads.png`;
+let tailsImage = `../assets/images/tails.png`;
 
 let start = document.getElementById("start");
 let result = document.getElementById("result");
