@@ -5,6 +5,7 @@ const possibleChoices = document.querySelectorAll("button");
 let rockImage = "../assets/images/Rock.png";
 let scissorImage = "../assets/images/scissors.png";
 let paperImage = "../assets/images/paper.png";
+let user_id = document.querySelector(".user_id").innerHTML;
 let userChoice;
 let computerChoice;
 let result;
@@ -13,7 +14,6 @@ let userChoiceImage;
 possibleChoices.forEach((possibleChoice) =>
   possibleChoice.addEventListener("click", (e) => {
     userChoice = e.target.id;
-    console.log(userChoice);
     if (userChoice === "rock") {
       userChoiceImage = rockImage;
     }
@@ -44,23 +44,35 @@ function generateComputerChoice() {
   computerChoiceDisplay.innerHTML = `<img src="${computerChoice}" width='80px' height='80px'/> `;
 }
 
-function getResult() {
+async function getResult() {
   if (computerChoice === userChoiceImage) {
     result = "Draw!";
   }
   if (computerChoice === rockImage && userChoiceImage === paperImage) {
+    const res = await fetch(`/api/users/win-RPS/${user_id}`, {
+      method: "PUT",
+    });
+    console.log(res);
     result = "Username!";
   }
   if (computerChoice === rockImage && userChoiceImage === scissorImage) {
     result = "Computer!";
   }
   if (computerChoice === paperImage && userChoiceImage === scissorImage) {
+    const res = await fetch(`/api/users/win-RPS/${user_id}`, {
+      method: "PUT",
+    });
+    console.log(res);
     result = "Username!";
   }
   if (computerChoice === paperImage && userChoiceImage === rockImage) {
     result = "Computer!";
   }
   if (computerChoice === scissorImage && userChoiceImage === rockImage) {
+    const res = await fetch(`/api/users/win-RPS/${user_id}`, {
+      method: "PUT",
+    });
+    console.log(res);
     result = "Username!";
   }
   if (computerChoice === scissorImage && userChoiceImage === paperImage) {
