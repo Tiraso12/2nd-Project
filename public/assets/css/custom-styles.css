@@ -37,6 +37,8 @@ body {
     border-color: black;
     background-size: contain;
     background-position: center;
+    border-width: 5px;
+
 }
 
 .special-card-2 {
@@ -50,6 +52,8 @@ body {
     background-size: contain;
     opacity: 1;
     border-radius: 5%;
+    border-color: #000;
+    border-width: 5px;
 }
 
 .special-card-3 {
@@ -61,6 +65,8 @@ body {
      background-image: url(../images/high\ or\ low.jpg);
      background-position: center;
      background-size: contain;
+     border-width: 5px;
+
 }
 .text-center {
   text-align: center;
