@@ -12,10 +12,12 @@
                                         <p class="h2">We hope you enjoy our selection of games to play from the list on the left.</p>
                                         <h2 class="Highscores">Highscores:</h2>
                                         <ol>Top players</ol>
-                                        <ol>1</ol>
-                                        <ol>2</ol>
-                                        <ol>3</ol>
-                                        <ol>4</ol>
+                                        {{#each totalWins}}
+                                        <ol>
+                                            <p>{{this.username}}</p>
+                                            <p>{{this.totalWins}}</p>
+                                        </ol>
+                                        {{/each}}
                                     </div>
                                 </div>
                             </div>

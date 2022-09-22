@@ -1,0 +1,55 @@
+<div id="page-wrapper" >
+            <div id="page-inner" class="row">
+
+                <div class="container-fluid ">
+                    <div class="row text-center">
+                        <div class="col-md-5 text-center my auto">
+                            <div class="card card-block d-flex special-card" style="height: 350px;">
+                                <div class="card-body align-items-center d-flex justify-content-center">
+                                    
+                                    <div id="betting" class="container-fluid">
+                                        <h1 style="color:black ;">Choose your bet below.</h1>
+                                        <p class="h2">Once you choose the game can begin.</p>
+                                        <button id="50">50</button>
+                                        <button id="100">100</button>
+                                        <button id="200">200</button>
+                                        <p class="betChoice"></p>
+                                    </div>
+                                    
+                                    <div class="container-fluid">
+                                        <h1 style="color:black">Heads or Tails</h1>
+                                        <div class="imageContainer"><img src="/assets/images/heads.png" /></div>
+                                    
+                                        <button id="heads">Heads</button>
+                                        <button id="tails">Tails</button>
+                                        <div id="result"></div>
+                                        <p class="user_id" style="display:none;">{{user_id}}</p>
+                                        <style>
+                                        .imageContainer img {
+                                            height: 200px;
+                                            width: 200px;
+                                        }
+                                        .rotate {
+                                            animation: rotation 0.1s infinite;
+                                            animation-direction: alternate-reverse;
+                                    
+                                            /* transform: rotateX(120deg); */
+                                        }
+                                        @keyframes rotation {
+                                            from {
+                                            transform: rotateX(0deg);
+                                            }
+                                            to {
+                                            transform: rotateX(180deg);
+                                            }
+                                        }
+                                        </style>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+<script src="/javascript/flipACoin.js"></script>
